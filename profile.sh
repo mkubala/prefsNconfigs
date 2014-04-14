@@ -12,5 +12,5 @@ alias showRootLog="while [ ! -f ../logs/root.log ]; do echo -n; done && tail -f 
 alias restart-tomcat="./restart.sh && showRootLog"
 alias restart-tomcat-dbg="./shutdown.sh && ./catalina.sh jpda start && showRootLog"
 
-alias copy-jar-to-tomcat="ls target/ | grep -e 'mes-.*\.jar' -e 'qcadoo-.*\.jar' | xargs -I {} cp {} ~/qcadoo/mes/mes-application/target/tomcat-archiver/mes-application/webapps/ROOT/WEB-INF/lib/"
+alias copy-jar-to-tomcat="ls target/ | grep -e 'mes-.*\.jar' -e 'qcadoo-.*\.jar' | xargs -I {} cp target/{} ~/qcadoo/mes/mes-application/target/tomcat-archiver/mes-application/webapps/ROOT/WEB-INF/lib/"
 
