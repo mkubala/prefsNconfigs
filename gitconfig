@@ -3,5 +3,6 @@
 [alias]
 	stat = status -s
 	hist = log --pretty=format:\"%C(cyan)<--%C(reset) %h - %C(yellow)%an, %ar%Creset %s %C(bold green)%d%C(reset)\" --graph
+        files = diff --name-only 
 [push]
 	default = simple
