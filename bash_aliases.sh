@@ -12,3 +12,5 @@ alias restart-tomcat-dbg="./shutdown.sh && ./catalina.sh jpda start && showRootL
 
 alias clean-install="mvn clean install -o"
 alias copy-jar-to-tomcat="ls target/ | grep -e 'mes-.*\.jar' -e 'qcadoo-.*\.jar' | xargs -I {} cp target/{} ~/qcadoo/mes/mes-application/target/tomcat-archiver/mes-application/webapps/ROOT/WEB-INF/lib/"
+
+alias scp_compressed="scp -C -o CompressionLevel=9"
